@@ -17,10 +17,9 @@ defmodule SunriseWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/hello", HelloController, :index
   end
 
-  get "/hello", HelloController, :index
-  
   # Other scopes may use custom stacks.
   # scope "/api", SunriseWeb do
   #   pipe_through :api
